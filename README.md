@@ -1,13 +1,13 @@
 
 | CS-665       | Software Design & Patterns |
 |--------------|----------------------------|
-| Name         | FIRST_NAME LAST_NAME       |
-| Date         | MM/DD/YYYY                 |
-| Course       | Fall / Spring / Summer     |
-| Assignment # |                            |
+| Name         | Shahla Hassan              |
+| Date         | 02/24/2023                 |
+| Course       |  Summer                    |
+| Assignment # |  3                         |
 
 # Assignment Overview
-Please add a paragraph or two overviewing the objectives of the assignment.
+This assignment is about an email generation system for 5 different customer segments - Business, VIP, Frequent, New and Returning
 
 # GitHub Repository Link:
 https://github.com/{YOUR_USERNAME}/cs-665-assignment-{ASSIGNMENT_NUMBER}
@@ -19,11 +19,22 @@ For each assignment, please answer the following:
 
 - Explain the level of flexibility in your implementation, including how new object types can
 be easily added or removed in the future.
+
+It is very flexible as if we want to add a new customer segment - 'Old Customers'. We can easily add a New Customer Segment  by creating Old.java for creating email template and OldCustomer.java for creating its object.
+
 - Discuss the simplicity and understandability of your implementation, ensuring that it is
 easy for others to read and maintain.
+
+It is easy. EmailGeneration Class has a factory method creating different objects on runtime
+
 - Describe how you have avoided duplicated code and why it is important.
+
+Duplication is not there as each customer segment has different email template though they have the same variable
+
 - If applicable, mention any design patterns you have used and explain why they were
 chosen.
+
+Factory Design Pattern is used as same email variable with different values is needed for different customers created on run-time
 
 
 # Maven Commands
